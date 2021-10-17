@@ -32,6 +32,7 @@ body {
 }
 
 #skills-section h1,
+#about-section h1,
 #projects-section h1 {
   color: white;
   padding: 90px 0 20px 0;
@@ -93,6 +94,7 @@ body {
 }
 
 #about-container {
+  text-align: justify;
   display: flex;
   margin: auto;
   width: 80%;
@@ -261,6 +263,12 @@ footer {
     font-size: 35px;
   }
 
+  #skills-section h1,
+  #about-section h1,
+  #projects-section h1 {
+    padding: 50px 0 20px 0;
+  }
+
   #welcome {
     left: 50%;
     top: 30%;
@@ -269,9 +277,11 @@ footer {
   }
 
   #navbar {
+    top: 0;
     left: 0;
     right: 0;
     padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   #navbar ul {
@@ -284,6 +294,8 @@ footer {
 
   #navbar a {
     padding: 5px 7px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
   }
 
   #projects-container {
