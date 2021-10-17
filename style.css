@@ -244,6 +244,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  p {
+    display: block;
+  }
   #cut {
     display: none;
   }
@@ -256,6 +259,10 @@ footer {
 
   #navbar li {
     font-size: 1rem;
+  }
+
+  #navbar a {
+    padding: 5px 7px;
   }
 
   #contact-link {
