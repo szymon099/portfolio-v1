@@ -1,0 +1,273 @@
+html {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#intro-section {
+  height: 100vh;
+}
+
+#intro-section img {
+  position: fixed;
+  min-width: 100vw;
+  z-index: -1;
+}
+
+#welcome h1 {
+  margin: 0;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+#about-container h1 {
+  font-size: 2rem;
+}
+
+#skills-section h1,
+#projects-section h1 {
+  color: white;
+  padding: 90px 0 20px 0;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#welcome {
+  left: 50%;
+  top: 20%;
+  position: absolute;
+  width: 55vw;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  left: 6%;
+  top: 30px;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+#navbar li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#about-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+#about-container {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  align-items: center;
+  color: white;
+}
+
+#skills-section {
+  margin: 0;
+  padding: 20px 0 0 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.skill {
+  width: 33%;
+  height: 150px;
+  margin: 25px 0;
+}
+
+.bonus-skills {
+  margin: 30px auto;
+}
+
+.bonus-skills i {
+  margin: 30px 25px;
+}
+
+progress {
+  width: 110px;
+  background: lightgray;
+  border: 2px solid white;
+  border-radius: 33px;
+}
+
+progress::-webkit-progress-bar {
+  background: lightgray;
+  border-radius: 33px;
+  -webkit-border-radius: 33px;
+}
+
+progress::-webkit-progress-value {
+  background: black;
+  border-radius: 33px;
+  -webkit-border-radius: 33px;
+}
+
+progress::-moz-progress-bar {
+  background: lightgray;
+  border-radius: 33px;
+  -moz-border-radius: 33px;
+}
+
+#projects-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+h3 a {
+  color: white;
+}
+
+#projects-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  display: flex;
+  margin: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+}
+
+img.mobile {
+  z-index: 1;
+  position: absolute;
+  width: 32%;
+  transform: translate(30%, -110%);
+}
+
+.project img {
+  width: 100%;
+}
+
+#contact-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+#contact-link {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact-section p.link {
+  display: flex;
+  font-size: 20px;
+  width: 33%;
+  align-items: center;
+}
+
+#contact-section a {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+#contact-section i {
+  padding: 0 10px;
+}
+
+#cut {
+  display: block;
+  width: 100%;
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 2px 0;
+  font-size: 0.7rem;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  #cut {
+    display: none;
+  }
+
+  #navbar {
+    left: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  #navbar li {
+    font-size: 1rem;
+  }
+
+  #contact-link {
+    flex-direction: column;
+  }
+  #welcome h1 {
+    font-size: 35px;
+  }
+  #welcome {
+    left: 50%;
+    top: 30%;
+    width: 80vw;
+    text-align: left;
+  }
+}
