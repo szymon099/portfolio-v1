@@ -125,7 +125,11 @@ body {
 }
 
 .bonus-skills {
-  margin: 30px auto;
+  margin: 30px auto 0;
+}
+
+.bonus-skills p {
+  margin: 0;
 }
 
 .bonus-skills i {
@@ -246,6 +250,10 @@ footer {
 @media (max-width: 600px) {
   #cut {
     display: none;
+  }
+
+  #intro-section img {
+    transform: translateX(-50%);
   }
 
   #navbar {
