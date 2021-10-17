@@ -2,6 +2,7 @@ html {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
 
@@ -256,10 +257,25 @@ footer {
     transform: translateX(-50%);
   }
 
+  #welcome h1 {
+    font-size: 35px;
+  }
+
+  #welcome {
+    left: 50%;
+    top: 30%;
+    width: 80vw;
+    text-align: left;
+  }
+
   #navbar {
     left: 0;
     right: 0;
     padding: 0;
+  }
+
+  #navbar ul {
+    justify-content: space-evenly;
   }
 
   #navbar li {
@@ -270,16 +286,11 @@ footer {
     padding: 5px 7px;
   }
 
+  #projects-container {
+    width: 90%;
+  }
+
   #contact-link {
     flex-direction: column;
-  }
-  #welcome h1 {
-    font-size: 35px;
-  }
-  #welcome {
-    left: 50%;
-    top: 30%;
-    width: 80vw;
-    text-align: left;
   }
 }
