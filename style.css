@@ -45,14 +45,9 @@ body {
   height: 100vh;
 }
 
-<<<<<<< HEAD
 #intro-section img#bg {
   top: 0;
   left: 0;
-=======
-#background {
-  background-image: url(img/galaxy.jpg);
->>>>>>> 2fb2ebfa617c488fc59adc84d98d8601a26fe777
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -364,17 +359,11 @@ footer {
   background-color: black;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1000px) {
   #welcome #profile-img {
     margin: 10px auto;
     width: 150px;
     height: 150px;
-=======
-@media (max-width: 1200px) {
-  #background {
-    background-image: url(img/galaxy_1200.jpg);
->>>>>>> 2fb2ebfa617c488fc59adc84d98d8601a26fe777
   }
 }
 
