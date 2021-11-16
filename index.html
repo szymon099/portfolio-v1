@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,153 +29,162 @@
             </ul>
         </nav>
         <section id="intro-section">
-            <img src="img/galaxy.jpg" alt="">
+            <img id="bg" src="img/galaxy.jpg" alt="">
             <div id="welcome">
                 <h1>
                     Hi!<br>
                     I'm Szymon welcome on my portfolio site.
                 </h1>
-            </div>
-        </section>
-        <span id="cut"></span>
-        <section id="about-section">
-            <div id="about-container">
-                <div id="about-text">
-                    <h1>About me</h1>
-                    <p> My name is Szymon, I'm from Poland and live in Wrocław. I finished Technical IT School and now
-                        study IT on WSB University in Wrocław.<br>
-                        I’m interested in automotive, motorsport (mainly drift and stance car).<br>
-                        I'm developing towards programming, currently creating internet websites and as part of learning
-                        simple games, in the future maybe some applications.<br>
-                        Programing: (⭐ - ⭐⭐⭐⭐⭐)<br>
-                        💎 HTML5 - ⭐⭐<br>
-                        💎 CSS3 - ⭐⭐<br>
-                        💎 PHP - ⭐<br>
-                        💎 JavaScript -⭐<br>
-                        💎 Python - ⭐<br>
-                        I also met with: MySQL, SASS, Bootstrap, Wordpress.<br>
-                        Languages:<br>
-                        💎 Polish - native<br>
-                        💎 English - ⭐⭐</p>
+                <div id="profile-img">
+                    <img id="profile" src="img/profilowe.jpg" alt="">
                 </div>
             </div>
         </section>
         <span id="cut"></span>
-        <section id="skills-section">
-            <h1>My skills</h1>
-            <div id="skills-container">
-                <div class="skill">
-                    <i class="fab fa-css3 fa-4x"></i>
-                    <p>CSS</p>
-                    <progress value="50" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-html5 fa-4x"></i>
-                    <p>HTML</p>
-                    <progress value="45" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-python fa-4x"></i>
-                    <p>Python</p>
-                    <progress value="25" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-js fa-4x"></i>
-                    <p>JavaScript</p>
-                    <progress value="25" max="100"></progress>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-php fa-4x"></i>
-                    <p>PHP</p>
-                    <progress value="20" max="100"></progress>
-                </div>
-            </div>
-            <div class="bonus-skills">
-                I also met with:
-                <p><i class="fad fa-database fa-3x"></i>
-                    <i class="fab fa-sass fa-3x"></i>
-                    <i class="fab fa-bootstrap fa-3x"></i>
-                    <i class="fab fa-wordpress fa-3x"></i>
+<div id="darkbg">
+    <section id="about-section">
+        <div id="about-container">
+            <div id="about-text">
+                <h1>About me</h1>
+                <p> My name is Szymon, I'm from Poland and live in Wrocław. I finished Technical IT School and now
+                    study IT on WSB University in Wrocław.<br>
+                    I’m interested in automotive, motorsport (mainly drift and stance car).<br>
+                    I'm developing towards programming, currently creating internet websites and doing simple projects in Python.<br><br>
+                    Programing: (⭐ - ⭐⭐⭐⭐⭐)<br>
+                    💎 HTML5 - ⭐⭐<br>
+                    💎 CSS3 - ⭐⭐<br>
+                    💎 PHP - ⭐<br>
+                    💎 JavaScript -⭐<br>
+                    💎 Python - ⭐<br>
+                    I also met with: MySQL, SASS, Bootstrap, Wordpress.<br><br>
+                    Languages:<br>
+                    💎 Polish - native<br>
+                    💎 English - ⭐⭐
                 </p>
             </div>
-        </section>
-        <span id="cut"></span>
-        <section id="projects-section">
+        </div>
+    </section>
+    <span id="cut"></span>
+    <section id="skills-section" class="">
+        <h1>My skills</h1>
+        <div id="skills-container">
+            <div class="skill">
+                <i class="fab fa-css3 fa-4x"></i>
+                <p>CSS</p>
+                <progress value="50" max="100"></progress>
+            </div>
+            <div class="skill">
+                <i class="fab fa-html5 fa-4x"></i>
+                <p>HTML</p>
+                <progress value="45" max="100"></progress>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python fa-4x"></i>
+                <p>Python</p>
+                <progress value="25" max="100"></progress>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js fa-4x"></i>
+                <p>JavaScript</p>
+                <progress value="25" max="100"></progress>
+            </div>
+            <div class="skill">
+                <i class="fab fa-php fa-4x"></i>
+                <p>PHP</p>
+                <progress value="20" max="100"></progress>
+            </div>
+        </div>
+        <div class="bonus-skills">
+            I also met with:
+            <p><i class="fad fa-database fa-3x"></i>
+                <i class="fab fa-sass fa-3x"></i>
+                <i class="fab fa-bootstrap fa-3x"></i>
+                <i class="fab fa-wordpress fa-3x"></i>
+            </p>
+        </div>
+    </section>
+    <span id="cut"></span>
+    <section id="projects-section">
 
-            <h1>My projects</h1>
-            <h3>You can find more projects on my <a href="https://github.com/szymon099" target="_blank">Github.</a></h3>
+        <h1>My projects</h1>
+        <h3>You can find more projects on my <a href="https://github.com/szymon099" target="_blank">Github.</a></h3>
 
-            <div id="projects-container">
-                <div class="project">
-                    <h3><a href="https://szymon099.github.io/Weather-APP/" target="_blank">WeatherApp</a></h3>
-                    <img class="mobile" src="img/7.PNG" alt="">
-                    <div class="content">
-                    <p>
-                        WeatherApp is aplication write in JavaScript and use OpenWeatherMap API.
-                        The project was created for educational purposes and to use the previously acquired knowledge.
-                    </p>
-                </div>
-                </div>
+        <div id="projects-container">
+            <div class="project">
+                <h3><a href="https://szymon099.github.io/Weather-APP/" target="_blank">WeatherApp</a></h3>
+                <img class="mobile" src="img/7.PNG" alt="">
+                <div class="content">
+                <p>
+                    WeatherApp is aplication write in JavaScript and use OpenWeatherMap API.
+                    The project was created for educational purposes and to use the previously acquired knowledge.
+                </p>
+            </div>
+            </div>
 
-                <div class="project">
-                    <h3><a href="https://github.com/szymon099/QuizApp" target="_blank">QuizzApp</a></h3>
-                    <img class="mobile" src="img/quiz4.PNG" alt="">
-                    <div class="content">
-                    <p>
-                        Fully written in PHP, in the future I want to connect it to a database where I store all the questions and answers that will be automatically downloaded, displayed and checked. This will make it easier and faster to add new questions and quizzes.
-                    </p>
-                    <img src="img/quiz3.PNG">
-                </div>
-                </div>
+            <div class="project">
+                <h3><a href="https://github.com/szymon099/QuizApp" target="_blank">QuizzApp</a></h3>
+                <img class="mobile" src="img/quiz4.PNG" alt="">
+                <div class="content">
+                <p>
+                    Fully written in PHP, in the future I want to connect it to a database where I store all the questions and answers that will be automatically downloaded, displayed and checked. This will make it easier and faster to add new questions and quizzes.
+                </p>
+                <img src="img/quiz3.PNG">
+            </div>
+            </div>
 
-                <span id="cut"></span>
-                <h2>Layouts</h2>
+            <span id="cut"></span>
+            <h2>Layouts</h2>
 
-                <div class="project">
-                    <h3><a href="https://github.com/szymon099/fb-layout" target="_blank">Facebook Layout</a></h3>
-                    <img class="big" src="img/fb.PNG" alt="">
-                </div>
-             
+            <div class="project">
+                <h3><a href="https://github.com/szymon099/fb-layout" target="_blank">Facebook Layout</a></h3>
+                <img class="big" src="img/fb.PNG" alt="">
+            </div>
+         
+            <div class="project">
+                <h3><a href="https://github.com/szymon099/firstrepo" target="_blank">Copied random layout from internet</a></h3>
                 <a href="img/full_minimal.png" target="_blank">
-                    <div class="project">
-                        <h3><a href="https://github.com/szymon099/firstrepo" target="_blank">Copied random layout from internet</a></h3>
-                        <img class="big" src="img/minimal.PNG" alt="">
-                    </div>
+                <img class="big" src="img/minimal.PNG" alt="">
                 </a>
+            </div>
 
-                <div class="project">
-                    <h3><a href="https://github.com/szymon099/RWDproject">First RWD project</a></h3>
-                    <p>
-                        It's not beautiful also copied random layout from internet
-                    </p>
-                    <img class="big" src="img/1rwd.PNG" alt="">
-                </div>
-                <div class="mobile">
-                    <img class="iphone" src="img/rwd_mobile.png" alt="">
-                </div>
+            <div class="project">
+                <h3><a href="http://dmuchance-zamki.pl" target="_blank">Inflatable castles - attractions for children</a></h3>
+                <p>
+                    The website is responsive, click and check it out.<br>
+                    Website design provided by the client.
+                </p>
+                <a href="http://dmuchance-zamki.pl" target="_blank">
+                <img class="big" src="img/dmuchance.png" alt="">
+                </a>
             </div>
-        </section>
-        <span id="cut"></span>
-        <section id="contact-section">
-            <h1>Contact with me.</h1>
-            <div id="contact-link">
-                <p class="link"><a target="_blank" href="https://github.com/szymon099">
-                        <i class="fab fa-github fa-2x"></i>
-                        Github
-                    </a></p>
-                <p class="link"><a target="_blank" href="https://www.linkedin.com/in/szymon-ciachera-7179741b7/">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                        Linkedin
-                    </a></p>
-                <p class="link"><i class="fas fa-envelope-square fa-2x"></i>
-                    aloss3013@gmail.com</p>
-            </div>
-        </section>
+
+
+        </div>
+    </section>
+    <span id="cut"></span>
+    <section id="contact-section">
+        <h1>Contact with me.</h1>
+        <div id="contact-link">
+            <p class="link"><a target="_blank" href="https://github.com/szymon099">
+                    <i class="fab fa-github fa-2x"></i>
+                    Github
+                </a></p>
+            <p class="link"><a target="_blank" href="https://www.linkedin.com/in/szymon-ciachera-7179741b7/">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    Linkedin
+                </a></p>
+            <p class="link"><i class="fas fa-envelope-square fa-2x"></i>
+                aloss3013@gmail.com</p>
+        </div>
+    </section>
+</div>
     </main>
     <footer>
         by Ciachera Szymon &copy 2021
     </footer>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>

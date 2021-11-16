@@ -6,6 +6,34 @@ html {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #888;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+#darkbg {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  max-width: 1200px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,7 +43,9 @@ body {
   height: 100vh;
 }
 
-#intro-section img {
+#intro-section img#bg {
+  top: 0;
+  left: 0;
   position: fixed;
   min-width: 100vw;
   z-index: -1;
@@ -25,6 +55,24 @@ body {
   margin: 0;
   font-size: 50px;
   color: rgb(255, 255, 255);
+  animation: welcome-text 1s both;
+}
+
+#welcome #profile-img {
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  animation: scale-0-11-1 1s 1s both;
+}
+
+img#profile {
+  width: 100%;
+  transform: translateY(-7%);
 }
 
 #about-container h1 {
@@ -84,13 +132,14 @@ body {
 }
 
 #about-section {
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: space-between;
   margin: 0px auto;
+  animation: slide-rotate-ver-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    paused;
 }
 
 #about-container {
@@ -103,6 +152,11 @@ body {
   color: white;
 }
 
+#about-section.animate {
+  animation: slide-rotate-ver-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    running;
+}
+
 #skills-section {
   margin: 0;
   padding: 20px 0 0 0;
@@ -110,7 +164,7 @@ body {
   min-height: 100vh;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  animation: fromLeft 1s paused;
 }
 
 #skills-container {
@@ -125,6 +179,10 @@ body {
   width: 33%;
   height: 150px;
   margin: 25px 0;
+}
+
+#skills-section.animate {
+  animation: fromLeft 1s running;
 }
 
 .bonus-skills {
@@ -165,7 +223,6 @@ progress::-moz-progress-bar {
 }
 
 #projects-section {
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   margin: 0;
   width: 100%;
@@ -181,7 +238,11 @@ h3 a {
   width: 80%;
   margin: auto;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+#projects-container h2 {
+  width: 100%;
 }
 
 .project {
@@ -196,11 +257,16 @@ h3 a {
   width: 100%;
 }
 
-img.iphone {
+img.mobile {
+  position: relative;
+  width: 32%;
+}
+
+img#web-mobile {
   z-index: 1;
   position: absolute;
-  width: 32%;
-  transform: translate(30%, -110%);
+  max-width: 260px;
+  transform: translate(100%, 45%);
 }
 
 .project img {
@@ -230,7 +296,6 @@ img.iphone {
 }
 
 #contact-section {
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   margin: 0 auto;
   padding: 50px 0;
@@ -250,6 +315,18 @@ img.iphone {
   font-size: 20px;
   width: 33%;
   align-items: center;
+}
+
+p.link:nth-of-type(1) {
+  animation: pulse linear 5s infinite;
+}
+
+p.link:nth-of-type(2) {
+  animation: pulse linear 5s 1s infinite;
+}
+
+p.link:nth-of-type(3) {
+  animation: pulse linear 5s 2s infinite;
 }
 
 #contact-section a {
@@ -278,12 +355,20 @@ footer {
   background-color: black;
 }
 
+@media (max-width: 1000px) {
+  #welcome #profile-img {
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media (max-width: 600px) {
   #cut {
     display: none;
   }
 
-  #intro-section img {
+  #intro-section img#bg {
     transform: translateX(-50%);
   }
 
